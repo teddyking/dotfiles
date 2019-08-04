@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: update brew
+    homebrew: update_homebrew=yes
