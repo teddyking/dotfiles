@@ -1,0 +1,4 @@
+# aliases
+
+alias ll='ls -lahG'
+alias vim='nvim'
