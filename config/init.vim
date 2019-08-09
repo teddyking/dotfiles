@@ -3,6 +3,8 @@ filetype off
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 
+nnoremap <silent> <cr> :w<cr>
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -39,7 +41,6 @@ Plugin 'rust-lang/rust.vim', { 'for': 'rust' }
 call vundle#end()
 
 filetype plugin indent on
-
 
 " ---------------
 " NERDTree
