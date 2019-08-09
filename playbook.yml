@@ -21,6 +21,7 @@
     - google-chrome
     - nordvpn
     - shiftit
+    - slack
     - spotify
     - sublime-text
     - vagrant
@@ -67,6 +68,9 @@
     - {target: ~/.gitconfig, src: "{{ansible_env.PWD}}/config/gitconfig"}
     - {target: ~/.tmux.conf, src: "{{ansible_env.PWD}}/config/tmux.conf"}
     - {target: ~/.config/nvim/init.vim, src: "{{ansible_env.PWD}}/config/init.vim"}
+
+  - name: install python support for nvim
+    command: pip3 install --user --upgrade pynvim
 
   - name: get Vundle
     git:
