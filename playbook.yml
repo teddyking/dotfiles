@@ -26,6 +26,7 @@
     - sublime-text
     - vagrant
     - virtualbox
+    - zoomus
 
   - name: install Homebrew packages
     homebrew:
