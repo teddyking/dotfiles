@@ -1,5 +1,6 @@
 # aliases
 
+alias k='kubectl'
 alias ll='ls -lahG'
 alias vim='nvim'
 

@@ -40,6 +40,7 @@
     - {name: git-duet, install_options: ''}
     - {name: go, install_options: ''}
     - {name: jq, install_options: ''}
+    - {name: kubernetes-cli, install_options: ''}
     - {name: lastpass-cli, install_options: ''}
     - {name: libgit2, install_options: ''}
     - {name: neovim, install_options: ''}
