@@ -19,10 +19,12 @@
     - font-inconsolata
     - google-cloud-sdk
     - google-chrome
+    - minikube
     - nordvpn
     - shiftit
     - slack
     - spotify
+    - steam
     - sublime-text
     - vagrant
     - virtualbox
