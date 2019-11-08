@@ -5,4 +5,9 @@ alias ll='ls -lahG'
 alias vim='nvim'
 
 # path
-export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin
+
+# private
+if [ -f ~/.bash_private ]; then
+   source ~/.bash_private
+fi

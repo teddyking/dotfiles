@@ -15,6 +15,7 @@
     with_items:
     - 1password
     - alacritty
+    - atom
     - flycut
     - font-inconsolata
     - google-cloud-sdk
@@ -26,6 +27,7 @@
     - spotify
     - steam
     - sublime-text
+    - the-unarchiver
     - vagrant
     - virtualbox
     - zoomus
@@ -55,6 +57,7 @@
     - {name: tree, install_options: ''}
     - {name: watch, install_options: ''}
     - {name: wget, install_options: ''}
+    - {name: yq, install_options: ''}
 
   - name: get TPM
     git:

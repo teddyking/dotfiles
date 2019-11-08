@@ -1,9 +1,8 @@
 set nocompatible
 filetype off
-
 set rtp+=~/.config/nvim/bundle/Vundle.vim
-
 nnoremap <silent> <cr> :w<cr>
+set number
 
 call vundle#begin()
 
@@ -162,3 +161,5 @@ augroup luan_autoformat
   autocmd!
   autocmd BufWrite *.c,*.h,*.cpp,*.hpp,*.go,*.js,*.vue,*.rs :Autoformat
 augroup END
+
+colorscheme anderson
