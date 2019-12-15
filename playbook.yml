@@ -22,6 +22,7 @@
     - google-chrome
     - minikube
     - nordvpn
+    - ngrok
     - shiftit
     - slack
     - spotify
@@ -30,6 +31,7 @@
     - the-unarchiver
     - vagrant
     - virtualbox
+    - visual-studio-code
     - zoomus
 
   - name: install Homebrew packages
@@ -38,6 +40,7 @@
       install_options: "{{item.install_options}}"
       state: latest
     with_items:
+    - {name: azure-cli, install_options: ''}
     - {name: ctags, install_options: ''}
     - {name: direnv, install_options: ''}
     - {name: git, install_options: ''}

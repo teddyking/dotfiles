@@ -3,6 +3,8 @@
 alias k='kubectl'
 alias ll='ls -lahG'
 alias vim='nvim'
+alias emeryvillepw='cat /tmp/emeryville | jq -r .pks_api.uaa_admin_password | pbcopy'
+alias seasidepw='cat /tmp/seaside | jq -r .pks_api.uaa_admin_password | pbcopy'
 
 # path
 export PATH=$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin
