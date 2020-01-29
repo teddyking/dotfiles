@@ -14,6 +14,7 @@
     homebrew_cask: name={{item}} install_options=appdir=/Applications
     with_items:
     - 1password
+    - 1password-cli
     - alacritty
     - atom
     - flycut
@@ -43,6 +44,7 @@
     - {name: azure-cli, install_options: ''}
     - {name: ctags, install_options: ''}
     - {name: direnv, install_options: ''}
+    - {name: gcc, install_options: ''}
     - {name: git, install_options: ''}
     - {name: git-duet, install_options: ''}
     - {name: go, install_options: ''}
@@ -56,6 +58,8 @@
     - {name: node, install_options: ''}
     - {name: pstree, install_options: ''}
     - {name: ripgrep, install_options: ''}
+    - {name: rbenv, install_options: ''}
+    - {name: ruby-build, install_options: ''}
     - {name: shellcheck, install_options: ''}
     - {name: tig, install_options: ''}
     - {name: tmux, install_options: ''}
