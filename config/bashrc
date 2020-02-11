@@ -9,6 +9,9 @@ alias seasidepw='cat /tmp/seaside | jq -r .pks_api.uaa_admin_password | pbcopy'
 # path
 export PATH=$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin
 
+# bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 # private
 if [ -f ~/.bash_private ]; then
    source ~/.bash_private

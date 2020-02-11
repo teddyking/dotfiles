@@ -42,6 +42,8 @@
       state: latest
     with_items:
     - {name: azure-cli, install_options: ''}
+    - {name: bash, install_options: ''}
+    - {name: bash-completion@2, install_options: ''}
     - {name: ctags, install_options: ''}
     - {name: direnv, install_options: ''}
     - {name: gcc, install_options: ''}
