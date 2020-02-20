@@ -8,6 +8,6 @@ MacOS-based workstation installation scripts to setup my local dev environment.
 
 ## Manual post-install steps
 
-* `cd ~/.vim/bundle/vimproc.vim && make`
 * `tmux && ctrl-space + I`
+* Set font to "Inconsolata Nerd Font" size 20
 * Follow steps to upgrade bash shell - https://itnext.io/upgrading-bash-on-macos-7138bd1066ba
