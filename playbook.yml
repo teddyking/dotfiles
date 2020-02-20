@@ -75,6 +75,14 @@
       repo: https://github.com/tmux-plugins/tpm
       dest: ~/.tmux/plugins/tpm
 
+  - name: install python support for nvim
+    command: pip3 install --user --upgrade pynvim
+
+  - name: install Luan's Neovim distribution
+    git:
+      repo: https://github.com/luan/nvim
+      dest: ~/.config/nvim
+
   - name: set up symlinks
     file:
       path: "{{item.target}}"
@@ -86,12 +94,8 @@
     - {target: ~/.bash_profile, src: "{{ansible_env.PWD}}/config/bash_profile"}
     - {target: ~/.gitconfig, src: "{{ansible_env.PWD}}/config/gitconfig"}
     - {target: ~/.git-authors, src: "{{ansible_env.PWD}}/config/git-authors"}
+    - {target: ~/.config/nvim/user/before.vim, src: "{{ansible_env.PWD}}/config/nvim/before.vim"}
+    - {target: ~/.config/nvim/user/plug.vim, src: "{{ansible_env.PWD}}/config/nvim/plug.vim"}
+    - {target: ~/.config/nvim/user/after.vim, src: "{{ansible_env.PWD}}/config/nvim/after.vim"}
     - {target: ~/.tmux.conf, src: "{{ansible_env.PWD}}/config/tmux.conf"}
 
-  - name: install python support for nvim
-    command: pip3 install --user --upgrade pynvim
-
-  - name: install Luan's Neovim distribution
-    git:
-      repo: https://github.com/luan/nvim
-      dest: ~/.config/nvim
