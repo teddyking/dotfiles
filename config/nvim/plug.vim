@@ -4,3 +4,4 @@
 " ...
 
 Plug 'gilgigilgil/anderson.vim'
+Plug 'christoomey/vim-tmux-navigator'
