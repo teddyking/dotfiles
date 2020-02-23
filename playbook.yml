@@ -33,6 +33,7 @@
     - vagrant
     - virtualbox
     - visual-studio-code
+    - vlc
     - zoomus
 
   - name: install Homebrew packages
@@ -64,6 +65,7 @@
     - {name: rbenv, install_options: ''}
     - {name: ruby-build, install_options: ''}
     - {name: shellcheck, install_options: ''}
+    - {name: stern, install_options: ''}
     - {name: tig, install_options: ''}
     - {name: tmux, install_options: ''}
     - {name: tree, install_options: ''}
