@@ -71,6 +71,7 @@
     - {name: tree, install_options: ''}
     - {name: watch, install_options: ''}
     - {name: wget, install_options: ''}
+    - {name: yarn, install_options: ''}
     - {name: yq, install_options: ''}
 
   - name: get TPM
