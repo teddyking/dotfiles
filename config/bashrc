@@ -1,7 +1,7 @@
 # aliases
 
 alias k='kubectl'
-alias kindmeup='kubectl cluster-info --context kind-kind'
+alias kindmeup='kubectl config use-context kind-kind'
 alias ll='ls -lahG'
 alias vim='nvim'
 
