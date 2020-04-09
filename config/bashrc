@@ -4,9 +4,11 @@ alias k='kubectl'
 alias kindmeup='kubectl config use-context kind-kind'
 alias ll='ls -lahG'
 alias vim='nvim'
+alias loadGlobalProtect='launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
+alias unloadGlobalProtect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
 
 # path
-export PATH=$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin
+export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin"
 
 # bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
