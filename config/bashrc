@@ -16,6 +16,9 @@ export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin"
 # direnv
 eval "$(direnv hook bash)"
 
+# rbenv
+eval "$(rbenv init -)"
+
 # private
 if [ -f ~/.bash_private ]; then
    source ~/.bash_private
