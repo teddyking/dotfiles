@@ -9,6 +9,16 @@
 " let g:lightline['colorscheme'] = 'wombat'
 " ...
 
+" NERDTree
 nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap \ :NERDTreeToggle<CR>
 
+" Jump to error
+nmap <silent> ]q :ALENext <CR>
+nmap <silent> [q :ALEPrevious <CR>
+
+" Switch between file and test file
+nmap <silent> ,, :GoAlternate <CR>
+
+" Open in GitHub
+nmap <silent> ,gg :ToGithub <CR>
