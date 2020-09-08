@@ -20,5 +20,8 @@ nmap <silent> [q :ALEPrevious <CR>
 " Switch between file and test file
 nmap <silent> ,, :GoAlternate <CR>
 
+" Quickly run tests for current file
+nmap <silent> ,t :TestFile <CR>
+
 " Open in GitHub
 nmap <silent> ,gg :ToGithub <CR>
