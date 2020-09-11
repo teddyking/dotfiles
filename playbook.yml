@@ -29,7 +29,6 @@
     - nordvpn
     - ngrok
     - shiftit
-    - slack
     - spotify
     - steam
     - sublime-text
@@ -39,7 +38,6 @@
     - virtualbox
     - visual-studio-code
     - vlc
-    - zoomus
 
   - name: install Homebrew packages
     homebrew:
@@ -79,6 +77,7 @@
     - {name: skaffold, install_options: ''}
     - {name: shellcheck, install_options: ''}
     - {name: stern, install_options: ''}
+    - {name: terraform, install_options: ''}
     - {name: tig, install_options: ''}
     - {name: tmux, install_options: ''}
     - {name: tree, install_options: ''}
