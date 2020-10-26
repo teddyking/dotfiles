@@ -4,8 +4,7 @@ alias k='kubectl'
 alias kindmeup='kubectl config use-context kind-kind'
 alias ll='ls -lahG'
 alias vim='nvim'
-alias loadGlobalProtect='launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
-alias unloadGlobalProtect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
+alias allowthat='sudo xattr -r -d com.apple.quarantine'
 
 # path
 export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin:${HOME}/.krew/bin"
@@ -18,6 +17,9 @@ eval "$(direnv hook bash)"
 
 # rbenv
 eval "$(rbenv init -)"
+
+# gnu-sed
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # lastpass CLI timeout
 export LPASS_AGENT_TIMEOUT=43200
