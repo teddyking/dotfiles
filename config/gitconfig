@@ -37,8 +37,8 @@
     default = simple
 
 [user]
-  name = teddyking
-  email = edteddyking@gmail.com
+  name = eking
+  email = eking@vmware.com
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/

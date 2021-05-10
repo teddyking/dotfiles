@@ -5,18 +5,21 @@ alias kindmeup='kubectl config use-context kind-kind'
 alias ll='ls -lahG'
 alias vim='nvim'
 alias allowthat='sudo xattr -r -d com.apple.quarantine'
+alias kw='kubectl --kubeconfig /home/eking/workspace/poc-demo/workloads.kubeconfig'
+alias ks='kubectl --kubeconfig /home/eking/workspace/poc-demo/services.kubeconfig'
+alias kc='kubectl --kubeconfig /home/eking/workspace/poc-demo/control.kubeconfig'
 
 # path
 export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin:${HOME}/.krew/bin"
+
+# editor
+export EDITOR="/usr/bin/nvim"
 
 # bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # direnv
 eval "$(direnv hook bash)"
-
-# rbenv
-eval "$(rbenv init -)"
 
 # gnu-sed
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"

@@ -33,6 +33,7 @@
     - {name: jq}
     - {name: kubectl}
     - {name: kustomize}
+    - {name: ruby}
 
   - name: Add Docker GPG apt Key
     become: yes
@@ -90,6 +91,11 @@
     git:
       repo: https://github.com/tmux-plugins/tpm
       dest: ~/.tmux/plugins/tpm
+
+  - name: Install tmuxinator
+    gem:
+      name: tmuxinator
+      state: latest
 
   - name: set up symlinks
     file:
