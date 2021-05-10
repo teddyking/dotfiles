@@ -28,3 +28,5 @@ export LPASS_AGENT_TIMEOUT=43200
 if [ -f ~/.bash_private ]; then
    source ~/.bash_private
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
