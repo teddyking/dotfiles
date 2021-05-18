@@ -37,10 +37,12 @@
     default = simple
 
 [user]
-  name = eking
+  name = "Ed King"
   email = eking@vmware.com
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[url "ssh://git@gitlab.eng.vmware.com/"]
+	insteadOf = https://gitlab.eng.vmware.com/
 [pull]
 	ff = only

@@ -5,9 +5,12 @@ alias kindmeup='kubectl config use-context kind-kind'
 alias ll='ls -lahG'
 alias vim='nvim'
 alias allowthat='sudo xattr -r -d com.apple.quarantine'
-alias kw='kubectl --kubeconfig /home/eking/workspace/poc-demo/workloads.kubeconfig'
-alias ks='kubectl --kubeconfig /home/eking/workspace/poc-demo/services.kubeconfig'
-alias kc='kubectl --kubeconfig /home/eking/workspace/poc-demo/control.kubeconfig'
+#alias kw='kubectl --kubeconfig /home/eking/workspace/poc-demo/workloads.kubeconfig'
+#alias ks='kubectl --kubeconfig /home/eking/workspace/poc-demo/services.kubeconfig'
+#alias kc='kubectl --kubeconfig /home/eking/workspace/poc-demo/control.kubeconfig'
+
+alias kw="kubectl --context kind-workload"
+alias ks="kubectl --context kind-service"
 
 # path
 export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin:${HOME}/.krew/bin"
