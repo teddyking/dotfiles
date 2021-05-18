@@ -26,3 +26,11 @@ nmap <silent> ,T :TestNearest <CR>
 
 " Open in GitHub
 nmap <silent> ,gg :ToGithub <CR>
+
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
+
+colorscheme nord-light
+
+set noshowmode  " to get rid of thing like --INSERT--
