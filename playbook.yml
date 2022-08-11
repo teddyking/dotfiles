@@ -109,8 +109,8 @@
     - {target: ~/.bash_profile, src: "{{ansible_env.PWD}}/config/bash_profile"}
     - {target: ~/.gitconfig, src: "{{ansible_env.PWD}}/config/gitconfig"}
     - {target: ~/.git-authors, src: "{{ansible_env.PWD}}/config/git-authors"}
-    - {target: ~/.config/nvim/user/before.vim, src: "{{ansible_env.PWD}}/config/nvim/before.vim"}
-    - {target: ~/.config/nvim/user/plug.vim, src: "{{ansible_env.PWD}}/config/nvim/plug.vim"}
-    - {target: ~/.config/nvim/user/after.vim, src: "{{ansible_env.PWD}}/config/nvim/after.vim"}
+    - {target: ~/.config/nvim/lua/user/before.lua, src: "{{ansible_env.PWD}}/config/nvim/before.lua"}
+    - {target: ~/.config/nvim/lua/user/after.lua, src: "{{ansible_env.PWD}}/config/nvim/after.lua"}
+    - {target: ~/.config/nvim/lua/user/plugins.lua, src: "{{ansible_env.PWD}}/config/nvim/plugins.lua"}
     - {target: ~/.tmux.conf, src: "{{ansible_env.PWD}}/config/tmux.conf"}
 

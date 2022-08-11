@@ -5,15 +5,23 @@ alias kindmeup='kubectl config use-context kind-kind'
 alias ll='ls -lahG'
 alias vim='nvim'
 alias allowthat='sudo xattr -r -d com.apple.quarantine'
-#alias kw='kubectl --kubeconfig /home/eking/workspace/poc-demo/workloads.kubeconfig'
-#alias ks='kubectl --kubeconfig /home/eking/workspace/poc-demo/services.kubeconfig'
-#alias kc='kubectl --kubeconfig /home/eking/workspace/poc-demo/control.kubeconfig'
+alias kscplink='kubectl scp link --workload-kubeconfig-context=kind-workload --service-kubeconfig-context=kind-service'
+alias kscpfed='kubectl scp federate --workload-kubeconfig-context=kind-workload --service-kubeconfig-context=kind-service --namespace=default --api-group=rabbitmq.com --api-version=v1beta1 --api-resource=rabbitmqclusters'
+alias kscpdisc='kubectl scp make-discoverable --workload-kubeconfig-context=kind-workload --api-group=rabbitmq.com --api-resource-kind=RabbitmqCluster'
+alias kscpunlink='kubectl scp unlink --workload-kubeconfig-context=kind-workload --service-kubeconfig-context=kind-service'
+alias kscpunfed='kubectl scp unfederate --workload-kubeconfig-context=kind-workload --service-kubeconfig-context=kind-service --namespace=default --api-group=rabbitmq.com --api-version=v1beta1 --api-resource=rabbitmqclusters'
+alias kscpundisc='kubectl scp make-undiscoverable --workload-kubeconfig-context=kind-workload --api-group=rabbitmq.com --api-resource-kind=RabbitmqCluster'
+alias kw='kubectl --context kind-workload'
+alias ks='kubectl --context kind-service'
+alias clusterroles='kubectl get clusterroles | grep -v system | grep -v cert | grep -v service-binding-'
+alias port-forward-tap="kubectl port-forward --namespace tanzu-system-ingress service/envoy 8080:80"
+alias sourceprivate="source ~/.bash_private"
+alias odpctl="/home/eking/workspace/.odpcli/odpctl/odpctl"
+alias odpconfig="vi /home/eking/workspace/.odpcli/odpctl/etc/config.txt"
 
-alias kw="kubectl --context kind-workload"
-alias ks="kubectl --context kind-service"
 
 # path
-export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin:${HOME}/.krew/bin"
+export PATH="$PATH:$HOME/go/bin:/usr/local/kubebuilder/bin:$HOME/.cargo/bin:${HOME}/.krew/bin:${HOME}/.gem/bin"
 
 # editor
 export EDITOR="/usr/bin/nvim"
@@ -29,6 +37,12 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # lastpass CLI timeout
 export LPASS_AGENT_TIMEOUT=43200
+
+# ko
+export KO_DOCKER_REPO=kind.local
+
+# go
+export GOPRIVATE=gitlab.eng.vmware.com
 
 # private
 if [ -f ~/.bash_private ]; then
